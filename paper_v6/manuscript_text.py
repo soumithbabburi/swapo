@@ -10,7 +10,7 @@ p = doc.add_paragraph(); p.alignment = WD_ALIGN_PARAGRAPH.LEFT; p.paragraph_form
 p.paragraph_format.line_spacing_rule = WD_LINE_SPACING.ONE_POINT_FIVE
 runs(p, 'Tune the row group, not the layout: when separating long intervals pays for genomic region queries on cloud object storage', size=16, bold=True)
 para('Soumith Sai Babburi^{*}', indent=False, align=WD_ALIGN_PARAGRAPH.LEFT, after=0)
-para('Independent Researcher', indent=False, align=WD_ALIGN_PARAGRAPH.LEFT, size=10)
+para('Independent Researcher, Frisco, Texas, USA', indent=False, align=WD_ALIGN_PARAGRAPH.LEFT, size=10)
 para('^{*}To whom correspondence should be addressed: babburi17@gmail.com', indent=False, align=WD_ALIGN_PARAGRAPH.LEFT, size=10)
 para('Associate Editor: [assigned by the journal]', indent=False, align=WD_ALIGN_PARAGRAPH.LEFT, size=10, after=8)
 
