@@ -1,0 +1,35 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+build/
+dist/
+.venv/
+venv/
+bench_out/
+data/
+*.parquet
+
+# downloaded inputs and generated tables (fetch with: python -m swapo fetch)
+swapo_data/
+aws_lake_*/
+aws_s3_*/
+chr22_*_pq/
+gnomad_baseline/
+gnomad_swapo/
+hospital_clinvar_*/
+real_sv_table/
+wgs_sorted/
+wgs_swapo/
+*.vcf
+*.vcf.gz
+*.tbi
+paper_v6/preview/
+# stray empty files from shell quoting
+/{qs}
+/{res*
+/1
+/Wasted
+
+# superseded internal reports (claims withdrawn, see paper section 3.7)
+SWaPO_Technical_Report_v*.pdf

@@ -1,0 +1,580 @@
+{
+ "table": "1000 Genomes phase 3 chr22 (GRCh37)",
+ "profile": {
+  "rows": 1105249,
+  "median_bp": 1.0,
+  "p99_bp": 4.0,
+  "p99_9_bp": 18223.256000000285,
+  "p99_99_bp": 352611.2511999982,
+  "max_bp": 3472516,
+  "separability": 88152.81279999955,
+  "records_ge_500bp": 2347
+ },
+ "store": {
+  "latency_ms": 170.0,
+  "bandwidth_MBps": 5.2
+ },
+ "n_queries": 1000,
+ "runs": [
+  {
+   "tau_bp": 50,
+   "rg_rows": 50000,
+   "long_rows": 2376,
+   "sorted": {
+    "file_mb": 14.598947,
+    "row_groups": 23,
+    "rows_correct": true,
+    "variant": {
+     "row_groups": 1.493,
+     "requests": 3.493,
+     "megabytes": 0.998611389,
+     "ms": 785.8506517307692
+    },
+    "gene": {
+     "row_groups": 1.485,
+     "requests": 3.485,
+     "megabytes": 0.99513177,
+     "ms": 783.8214942307693
+    },
+    "gwas": {
+     "row_groups": 1.803,
+     "requests": 3.803,
+     "megabytes": 1.1992188430000001,
+     "ms": 877.1290082692308
+    }
+   },
+   "split": {
+    "file_mb": 14.602022,
+    "row_groups": 24,
+    "rows_correct": true,
+    "variant": {
+     "row_groups": 1.999,
+     "requests": 3.999,
+     "megabytes": 0.698156181,
+     "ms": 814.0908040384616
+    },
+    "gene": {
+     "row_groups": 2.015,
+     "requests": 4.015,
+     "megabytes": 0.709201685,
+     "ms": 818.9349394230769
+    },
+    "gwas": {
+     "row_groups": 2.344,
+     "requests": 4.344,
+     "megabytes": 0.920327344,
+     "ms": 915.4660276923076
+    }
+   },
+   "saving_ms": {
+    "variant": -0.035935775131694436,
+    "gene": -0.044797757462325505,
+    "gwas": -0.04370738974728949
+   }
+  },
+  {
+   "tau_bp": 50,
+   "rg_rows": 122880,
+   "long_rows": 2376,
+   "sorted": {
+    "file_mb": 14.863986,
+    "row_groups": 9,
+    "rows_correct": true,
+    "variant": {
+     "row_groups": 1.174,
+     "requests": 3.174,
+     "megabytes": 1.955146552,
+     "ms": 915.5697215384615
+    },
+    "gene": {
+     "row_groups": 1.17,
+     "requests": 3.17,
+     "megabytes": 1.9481831440000001,
+     "ms": 913.5506046153846
+    },
+    "gwas": {
+     "row_groups": 1.293,
+     "requests": 3.293,
+     "megabytes": 2.15132408,
+     "ms": 973.5261692307693
+    }
+   },
+   "split": {
+    "file_mb": 14.85718,
+    "row_groups": 10,
+    "rows_correct": true,
+    "variant": {
+     "row_groups": 1.999,
+     "requests": 3.999,
+     "megabytes": 1.688478371,
+     "ms": 1004.5373790384615
+    },
+    "gene": {
+     "row_groups": 2.009,
+     "requests": 4.009,
+     "megabytes": 1.7021600319999999,
+     "ms": 1008.8684676923076
+    },
+    "gwas": {
+     "row_groups": 2.116,
+     "requests": 4.116,
+     "megabytes": 1.878949793,
+     "ms": 1061.0564986538461
+    }
+   },
+   "saving_ms": {
+    "variant": -0.09717190882034066,
+    "gene": -0.1043378030679023,
+    "gwas": -0.08991060763393643
+   }
+  },
+  {
+   "tau_bp": 500,
+   "rg_rows": 8192,
+   "long_rows": 2347,
+   "sorted": {
+    "file_mb": 14.222412,
+    "row_groups": 135,
+    "rows_correct": true,
+    "variant": {
+     "row_groups": 2.59,
+     "requests": 5.59,
+     "megabytes": 0.35443251600000003,
+     "ms": 1018.4600992307693
+    },
+    "gene": {
+     "row_groups": 2.723,
+     "requests": 5.723,
+     "megabytes": 0.36835756,
+     "ms": 1043.7479923076924
+    },
+    "gwas": {
+     "row_groups": 4.562,
+     "requests": 7.562,
+     "megabytes": 0.5611963120000001,
+     "ms": 1393.462367692308
+    }
+   },
+   "split": {
+    "file_mb": 14.212366,
+    "row_groups": 136,
+    "rows_correct": true,
+    "variant": {
+     "row_groups": 1.999,
+     "requests": 4.999,
+     "megabytes": 0.2101661,
+     "ms": 890.2465576923078
+    },
+    "gene": {
+     "row_groups": 2.123,
+     "requests": 5.123,
+     "megabytes": 0.223162702,
+     "ms": 913.8259042307693
+    },
+    "gwas": {
+     "row_groups": 3.952,
+     "requests": 6.952,
+     "megabytes": 0.41465223100000004,
+     "ms": 1261.5808136538462
+    }
+   },
+   "saving_ms": {
+    "variant": 0.1258896069029113,
+    "gene": 0.12447649148495088,
+    "gwas": 0.09464306829962599
+   }
+  },
+  {
+   "tau_bp": 500,
+   "rg_rows": 50000,
+   "long_rows": 2347,
+   "sorted": {
+    "file_mb": 14.598947,
+    "row_groups": 23,
+    "rows_correct": true,
+    "variant": {
+     "row_groups": 1.493,
+     "requests": 3.493,
+     "megabytes": 0.998611389,
+     "ms": 785.8506517307692
+    },
+    "gene": {
+     "row_groups": 1.485,
+     "requests": 3.485,
+     "megabytes": 0.99513177,
+     "ms": 783.8214942307693
+    },
+    "gwas": {
+     "row_groups": 1.803,
+     "requests": 3.803,
+     "megabytes": 1.1992188430000001,
+     "ms": 877.1290082692308
+    }
+   },
+   "split": {
+    "file_mb": 14.600254,
+    "row_groups": 24,
+    "rows_correct": true,
+    "variant": {
+     "row_groups": 1.999,
+     "requests": 3.999,
+     "megabytes": 0.696335438,
+     "ms": 813.7406611538461
+    },
+    "gene": {
+     "row_groups": 2.015,
+     "requests": 4.015,
+     "megabytes": 0.7073854399999999,
+     "ms": 818.5856615384616
+    },
+    "gwas": {
+     "row_groups": 2.344,
+     "requests": 4.344,
+     "megabytes": 0.9185119350000001,
+     "ms": 915.116910576923
+    }
+   },
+   "saving_ms": {
+    "variant": -0.03549021606287606,
+    "gene": -0.044352148497547095,
+    "gwas": -0.04330936720773915
+   }
+  },
+  {
+   "tau_bp": 500,
+   "rg_rows": 122880,
+   "long_rows": 2347,
+   "sorted": {
+    "file_mb": 14.863986,
+    "row_groups": 9,
+    "rows_correct": true,
+    "variant": {
+     "row_groups": 1.174,
+     "requests": 3.174,
+     "megabytes": 1.955146552,
+     "ms": 915.5697215384615
+    },
+    "gene": {
+     "row_groups": 1.17,
+     "requests": 3.17,
+     "megabytes": 1.9481831440000001,
+     "ms": 913.5506046153846
+    },
+    "gwas": {
+     "row_groups": 1.293,
+     "requests": 3.293,
+     "megabytes": 2.15132408,
+     "ms": 973.5261692307693
+    }
+   },
+   "split": {
+    "file_mb": 14.855062,
+    "row_groups": 10,
+    "rows_correct": true,
+    "variant": {
+     "row_groups": 1.999,
+     "requests": 3.999,
+     "megabytes": 1.6866942360000001,
+     "ms": 1004.1942761538461
+    },
+    "gene": {
+     "row_groups": 2.009,
+     "requests": 4.009,
+     "megabytes": 1.70032376,
+     "ms": 1008.5153384615384
+    },
+    "gwas": {
+     "row_groups": 2.116,
+     "requests": 4.116,
+     "megabytes": 1.877124829,
+     "ms": 1060.7055440384615
+    }
+   },
+   "saving_ms": {
+    "variant": -0.09679716632226087,
+    "gene": -0.10395125717872511,
+    "gwas": -0.08955010924521623
+   }
+  },
+  {
+   "tau_bp": 500,
+   "rg_rows": 1048576,
+   "long_rows": 2347,
+   "sorted": {
+    "file_mb": 11.769172,
+    "row_groups": 2,
+    "rows_correct": true,
+    "variant": {
+     "row_groups": 1.01,
+     "requests": 7.87,
+     "megabytes": 10.753520203999999,
+     "ms": 3405.8846546153845
+    },
+    "gene": {
+     "row_groups": 1.022,
+     "requests": 7.867,
+     "megabytes": 10.731725599999999,
+     "ms": 3401.1833846153845
+    },
+    "gwas": {
+     "row_groups": 1.04,
+     "requests": 7.885,
+     "megabytes": 10.745233628000001,
+     "ms": 3406.8410823076924
+    }
+   },
+   "split": {
+    "file_mb": 11.768448,
+    "row_groups": 3,
+    "rows_correct": true,
+    "variant": {
+     "row_groups": 1.999,
+     "requests": 8.824,
+     "megabytes": 10.702556064,
+     "ms": 3558.2638584615397
+    },
+    "gene": {
+     "row_groups": 2.002,
+     "requests": 8.782,
+     "megabytes": 10.611268143999999,
+     "ms": 3533.56848923077
+    },
+    "gwas": {
+     "row_groups": 2.024,
+     "requests": 8.799,
+     "megabytes": 10.616790969,
+     "ms": 3537.5205709615393
+    }
+   },
+   "saving_ms": {
+    "variant": -0.04473997780273131,
+    "gene": -0.038923248071305094,
+    "gwas": -0.03835796431259664
+   }
+  },
+  {
+   "tau_bp": 5000,
+   "rg_rows": 50000,
+   "long_rows": 1753,
+   "sorted": {
+    "file_mb": 14.598947,
+    "row_groups": 23,
+    "rows_correct": true,
+    "variant": {
+     "row_groups": 1.493,
+     "requests": 3.493,
+     "megabytes": 0.998611389,
+     "ms": 785.8506517307692
+    },
+    "gene": {
+     "row_groups": 1.485,
+     "requests": 3.485,
+     "megabytes": 0.99513177,
+     "ms": 783.8214942307693
+    },
+    "gwas": {
+     "row_groups": 1.803,
+     "requests": 3.803,
+     "megabytes": 1.1992188430000001,
+     "ms": 877.1290082692308
+    }
+   },
+   "split": {
+    "file_mb": 14.60061,
+    "row_groups": 24,
+    "rows_correct": true,
+    "variant": {
+     "row_groups": 1.999,
+     "requests": 3.999,
+     "megabytes": 0.6904426459999999,
+     "ms": 812.607431923077
+    },
+    "gene": {
+     "row_groups": 2.011,
+     "requests": 4.011,
+     "megabytes": 0.698944927,
+     "ms": 816.2824859615384
+    },
+    "gwas": {
+     "row_groups": 2.345,
+     "requests": 4.345,
+     "megabytes": 0.913374402,
+     "ms": 914.2989234615386
+    }
+   },
+   "saving_ms": {
+    "variant": -0.034048174590653124,
+    "gene": -0.04141375551665094,
+    "gwas": -0.0423767938830939
+   }
+  },
+  {
+   "tau_bp": 5000,
+   "rg_rows": 122880,
+   "long_rows": 1753,
+   "sorted": {
+    "file_mb": 14.863986,
+    "row_groups": 9,
+    "rows_correct": true,
+    "variant": {
+     "row_groups": 1.174,
+     "requests": 3.174,
+     "megabytes": 1.955146552,
+     "ms": 915.5697215384615
+    },
+    "gene": {
+     "row_groups": 1.17,
+     "requests": 3.17,
+     "megabytes": 1.9481831440000001,
+     "ms": 913.5506046153846
+    },
+    "gwas": {
+     "row_groups": 1.293,
+     "requests": 3.293,
+     "megabytes": 2.15132408,
+     "ms": 973.5261692307693
+    }
+   },
+   "split": {
+    "file_mb": 14.859606,
+    "row_groups": 10,
+    "rows_correct": true,
+    "variant": {
+     "row_groups": 1.999,
+     "requests": 3.999,
+     "megabytes": 1.681785508,
+     "ms": 1003.25029
+    },
+    "gene": {
+     "row_groups": 2.009,
+     "requests": 4.009,
+     "megabytes": 1.6956911319999999,
+     "ms": 1007.6244484615385
+    },
+    "gwas": {
+     "row_groups": 2.118,
+     "requests": 4.118,
+     "megabytes": 1.875773651,
+     "ms": 1060.7857021153845
+    }
+   },
+   "saving_ms": {
+    "variant": -0.09576612943709617,
+    "gene": -0.10297606215887734,
+    "gwas": -0.08963244712113205
+   }
+  },
+  {
+   "tau_bp": 50000,
+   "rg_rows": 50000,
+   "long_rows": 611,
+   "sorted": {
+    "file_mb": 14.598947,
+    "row_groups": 23,
+    "rows_correct": true,
+    "variant": {
+     "row_groups": 1.493,
+     "requests": 3.493,
+     "megabytes": 0.998611389,
+     "ms": 785.8506517307692
+    },
+    "gene": {
+     "row_groups": 1.485,
+     "requests": 3.485,
+     "megabytes": 0.99513177,
+     "ms": 783.8214942307693
+    },
+    "gwas": {
+     "row_groups": 1.803,
+     "requests": 3.803,
+     "megabytes": 1.1992188430000001,
+     "ms": 877.1290082692308
+    }
+   },
+   "split": {
+    "file_mb": 14.604976,
+    "row_groups": 24,
+    "rows_correct": true,
+    "variant": {
+     "row_groups": 1.987,
+     "requests": 3.987,
+     "megabytes": 0.684710806,
+     "ms": 809.4651550000001
+    },
+    "gene": {
+     "row_groups": 2.004,
+     "requests": 4.004,
+     "megabytes": 0.6931869300000001,
+     "ms": 813.985178846154
+    },
+    "gwas": {
+     "row_groups": 2.331,
+     "requests": 4.331,
+     "megabytes": 0.904501515,
+     "ms": 910.2125990384616
+    }
+   },
+   "saving_ms": {
+    "variant": -0.03004960703057513,
+    "gene": -0.0384828495230114,
+    "gwas": -0.0377180442755074
+   }
+  },
+  {
+   "tau_bp": 50000,
+   "rg_rows": 122880,
+   "long_rows": 611,
+   "sorted": {
+    "file_mb": 14.863986,
+    "row_groups": 9,
+    "rows_correct": true,
+    "variant": {
+     "row_groups": 1.174,
+     "requests": 3.174,
+     "megabytes": 1.955146552,
+     "ms": 915.5697215384615
+    },
+    "gene": {
+     "row_groups": 1.17,
+     "requests": 3.17,
+     "megabytes": 1.9481831440000001,
+     "ms": 913.5506046153846
+    },
+    "gwas": {
+     "row_groups": 1.293,
+     "requests": 3.293,
+     "megabytes": 2.15132408,
+     "ms": 973.5261692307693
+    }
+   },
+   "split": {
+    "file_mb": 14.862876,
+    "row_groups": 10,
+    "rows_correct": true,
+    "variant": {
+     "row_groups": 1.981,
+     "requests": 3.981,
+     "megabytes": 1.675922645,
+     "ms": 999.0628163461539
+    },
+    "gene": {
+     "row_groups": 1.997,
+     "requests": 3.997,
+     "megabytes": 1.69028003,
+     "ms": 1004.5438519230769
+    },
+    "gwas": {
+     "row_groups": 2.102,
+     "requests": 4.102,
+     "megabytes": 1.86709771,
+     "ms": 1056.397251923077
+    }
+   },
+   "saving_ms": {
+    "variant": -0.09119250325075878,
+    "gene": -0.09960394842713893,
+    "gwas": -0.08512465849560913
+   }
+  }
+ ]
+}

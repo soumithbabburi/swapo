@@ -1,0 +1,38 @@
+{
+ "format": "delta",
+ "store": {
+  "latency_ms": 170.0,
+  "bandwidth_MBps": 5.2,
+  "source": "measured: GCS from this machine"
+ },
+ "before": {
+  "label": "as written by default",
+  "files": 1,
+  "row_group_rows": 649879,
+  "file_rows_median": 649879,
+  "planner_agreement": "86/86",
+  "requests": 9.0,
+  "megabytes": 12.823397,
+  "ms": 3996.037884615385,
+  "rows_correct": true
+ },
+ "after": {
+  "label": "after the recommendation",
+  "files": 1,
+  "row_group_rows": 65536,
+  "file_rows_median": 649879,
+  "planner_agreement": "86/86",
+  "requests": 3.9186046511627906,
+  "megabytes": 2.0821332790697675,
+  "ms": 1066.5730366726298,
+  "rows_correct": true
+ },
+ "recommended": 65536,
+ "predicted_ms_before": 2848.2557692307696,
+ "predicted_ms_after": 1059.609355816082,
+ "measured_saving": 0.7330923611162694,
+ "predicted_saving": 0.627979563049476,
+ "rollback_rows": 649879,
+ "rows": 649879,
+ "table": "gnomad_window"
+}

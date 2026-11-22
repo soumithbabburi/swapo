@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.git/
+aws_s3_*/
+aws_lake_*/
+*.vcf.gz
+*.parquet

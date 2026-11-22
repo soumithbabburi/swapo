@@ -1,0 +1,116 @@
+{
+ "122880": {
+  "rows": 388687,
+  "rg_rows": 122880,
+  "separability": {
+   "median_bp": 2538,
+   "p90_bp": 75427,
+   "p99_bp": 443569,
+   "p99_9_bp": 1564481,
+   "p99_99_bp": 3306087,
+   "max_bp": 9734570,
+   "bimodality": 7.5,
+   "separable": false
+  },
+  "store": {
+   "latency_ms": 170.0,
+   "bandwidth_MBps": 5.2,
+   "source": "measured: GCS from this machine"
+  },
+  "thresholds": [
+   {
+    "percentile": 90,
+    "threshold_bp": 75427,
+    "long_fraction": 0.10000077182926108,
+    "requests": 5.966666666666667,
+    "megabytes": 0.35614266,
+    "ms": 1082.8223064102567,
+    "saving": -0.8917736922813198,
+    "rows_ok": true
+   },
+   {
+    "percentile": 99,
+    "threshold_bp": 443569,
+    "long_fraction": 0.010000334459346467,
+    "requests": 5.94,
+    "megabytes": 0.34831687,
+    "ms": 1076.7840134615385,
+    "saving": -0.8812243309696355,
+    "rows_ok": true
+   },
+   {
+    "percentile": 99.9,
+    "threshold_bp": 1564481,
+    "long_fraction": 0.001000805275195723,
+    "requests": 5.36,
+    "megabytes": 0.34505100333333333,
+    "ms": 977.5559621794872,
+    "saving": -0.7078653081267827,
+    "rows_ok": true
+   }
+  ],
+  "unsplit": {
+   "requests": 2.98,
+   "megabytes": 0.34208041,
+   "ms": 572.3846942307694,
+   "rows_ok": true
+  }
+ },
+ "8192": {
+  "rows": 388687,
+  "rg_rows": 8192,
+  "separability": {
+   "median_bp": 2538,
+   "p90_bp": 75427,
+   "p99_bp": 443569,
+   "p99_9_bp": 1564481,
+   "p99_99_bp": 3306087,
+   "max_bp": 9734570,
+   "bimodality": 7.5,
+   "separable": false
+  },
+  "store": {
+   "latency_ms": 170.0,
+   "bandwidth_MBps": 5.2,
+   "source": "measured: GCS from this machine"
+  },
+  "thresholds": [
+   {
+    "percentile": 90,
+    "threshold_bp": 75427,
+    "long_fraction": 0.10000077182926108,
+    "requests": 5.963333333333333,
+    "megabytes": 0.18582307,
+    "ms": 1049.5018724358974,
+    "saving": -0.9559528114329581,
+    "rows_ok": true
+   },
+   {
+    "percentile": 99,
+    "threshold_bp": 443569,
+    "long_fraction": 0.010000334459346467,
+    "requests": 5.963333333333333,
+    "megabytes": 0.14727391333333334,
+    "ms": 1042.0885730769232,
+    "saving": -0.942136672458832,
+    "rows_ok": true
+   },
+   {
+    "percentile": 99.9,
+    "threshold_bp": 1564481,
+    "long_fraction": 0.001000805275195723,
+    "requests": 5.38,
+    "megabytes": 0.14137899666666667,
+    "ms": 941.7882685897437,
+    "saving": -0.7552073608474674,
+    "rows_ok": true
+   }
+  ],
+  "unsplit": {
+   "requests": 3.0,
+   "megabytes": 0.13815409,
+   "ms": 536.5680942307692,
+   "rows_ok": true
+  }
+ }
+}
