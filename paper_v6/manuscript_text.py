@@ -9,9 +9,9 @@ runs(p, 'Original Paper', size=10, italic=True)
 p = doc.add_paragraph(); p.alignment = WD_ALIGN_PARAGRAPH.LEFT; p.paragraph_format.space_before = Pt(6)
 p.paragraph_format.line_spacing_rule = WD_LINE_SPACING.ONE_POINT_FIVE
 runs(p, 'Tune the row group, not the layout: when separating long intervals pays for genomic region queries on cloud object storage', size=16, bold=True)
-para('[First Author Name]^{1,*} and [Second Author Name]^{1}', indent=False, align=WD_ALIGN_PARAGRAPH.LEFT, after=0)
-para('^{1}[Department, Institution, City, Postcode, Country]', indent=False, align=WD_ALIGN_PARAGRAPH.LEFT, size=10)
-para('*To whom correspondence should be addressed: [corresponding author email]', indent=False, align=WD_ALIGN_PARAGRAPH.LEFT, size=10)
+para('Soumith Sai Babburi^{*}', indent=False, align=WD_ALIGN_PARAGRAPH.LEFT, after=0)
+para('Independent Researcher', indent=False, align=WD_ALIGN_PARAGRAPH.LEFT, size=10)
+para('^{*}To whom correspondence should be addressed: babburi17@gmail.com', indent=False, align=WD_ALIGN_PARAGRAPH.LEFT, size=10)
 para('Associate Editor: [assigned by the journal]', indent=False, align=WD_ALIGN_PARAGRAPH.LEFT, size=10, after=8)
 
 # ---------------- Abstract ----------------
@@ -19,7 +19,7 @@ heading('Abstract')
 para('**Motivation:** Variant callsets and genome annotation are increasingly stored as Parquet files inside open table formats such as Delta Lake and Apache Iceberg, and queried by region directly on cloud object storage. A region query is an interval overlap test, and its lower bound can only be checked against the largest end coordinate in each row group. A few long records, such as structural variants or gene bodies, inflate that statistic for every row stored beside them. Interval indexes solve the same problem in memory by storing long intervals apart, and the same idea has been proposed for lakehouse storage. Whether it pays on real data, and on object storage where every request has a fixed cost, has not been measured.', indent=False)
 para('**Results:** We measured separation of long records and row group sizing on seven tables built from GENCODE, ClinVar, RepeatMasker, 1000 Genomes, gnomAD v4.1 and the Database of Genomic Variants, checking every layout row for row against an unpruned scan. On annotation and population tables, whose interval lengths are continuous, separation never reduced bytes read, and on structural variant data it made queries take 71 to 96% longer. On the one real table with a bimodal length distribution, the 1000 Genomes phase 3 chr22 callset, separation reduced bytes by up to 41%, yet on a remote store it was 3.5 to 4.6% slower than a sorted layout with a tuned row group size, because the long records form a row group that every query must request. Choosing the row group size with a model of requests and bytes did pay: 66% and 73% less query time in Iceberg and Delta tables on a gnomAD v4.1 window, 14% against the DuckDB default on chr22, and 7 to 10% on DGV, where the model selected the measured optimum in all six workloads. We also calibrate the staleness of a materialized allele frequency: after 10% cohort growth, 5.6% of variants with frequency at least 0.1% sit in the wrong curation class.', indent=False)
 para('**Availability and implementation:** SWaPO is open source under the MIT licence at https://github.com/soumithbabburi/swapo. All inputs are public and identified by SHA256 in the repository; every figure is regenerated from the stored results.', indent=False)
-para('**Contact:** [corresponding author email]', indent=False)
+para('**Contact:** babburi17@gmail.com', indent=False)
 para('**Supplementary information:** Supplementary data are available at *Bioinformatics* online.', indent=False)
 
 # ---------------- 1 Introduction ----------------
@@ -124,7 +124,7 @@ para('All data are public. GENCODE v44, ClinVar, UCSC RepeatMasker hg38, UCSC DG
 heading('Code availability')
 para('SWaPO is written in Python, uses DuckDB, PyArrow, deltalake and pyiceberg, and is available under the MIT licence at https://github.com/soumithbabburi/swapo. The test suite checks pruning against brute force.', indent=False)
 heading('Funding')
-para('[Funding statement, or: This work received no specific funding.]', indent=False)
+para('This work received no specific funding. It was carried out as an independent project.', indent=False)
 para('*Conflict of Interest:* none declared.', indent=False)
 
 heading('References')
